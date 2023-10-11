@@ -1,0 +1,126 @@
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                background-color: rgb(236, 236, 227);
+                color: white;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            
+            #cruds {
+                width: 80%;
+                margin: auto;
+            }
+            
+            #head {
+                text-align: center;
+                text-transform: uppercase;
+                margin: 30px 0px;
+                color: #000;
+            }
+            
+            input {
+                width: 100%;
+                height: 30%;
+                padding: 10px;
+                border: none;
+                background-color: #000;
+                border-radius: 5px;
+                outline: none;
+                color: #fff;
+                margin: 10px;
+                font-size: 30px;
+            }
+            
+            input:focus {
+                background: #111;
+                transform: scale(1.1);
+            }
+            
+            #prices {
+                display: flex;
+            }
+            
+            #rest {
+                background-color: rgb(255, 0, 0);
+                padding: 4px 50px;
+                border-radius: 4px;
+                text-align: center;
+                margin: 5px;
+            }
+            
+            #rest::before {
+                content: 'الباقي ';
+            }
+            
+            #total {
+                background-color: rgb(255, 0, 0);
+                padding: 4px 50px;
+                border-radius: 4px;
+                text-align: center;
+                margin: 5px;
+            }
+            
+            #total::before {
+                content: 'المجموع ';
+            }
+            
+            button {
+                width: 100%;
+                background-color: #590570;
+                padding: 8px;
+                outline: none;
+                border: none;
+                border-radius: 20px;
+                color: white;
+                transition: 0.5s;
+                margin: 4px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            
+            button:hover {
+                background-color: #8d04b3;
+                letter-spacing: 1px;
+            }
+            
+            #btnsearch {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            #btnsearch button {
+                width: 45%;
+            }
+            
+            table {
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
+            
+            table th {
+                text-transform: uppercase;
+            }
+            
+            th,
+            td {
+                padding: 5px;
+                color: #000;
+                border: 1px solid black;
+            }
+            
+            @media (max-width: 600px) {
+                #prices {
+                    display: block;
+                }
+                #total,
+                #rest {
+                    padding: 10px;
+                }
+                #create {
+                    margin: 30px;
+                }
+            }

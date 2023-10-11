@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLD SHOES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="cruds">
+        <div id="head">
+            <h2>gold shoes</h2>
+            <p>product management system</p>
+        </div>
+        <div id="input">
+            <input id="title" placeholder="اسم التاجر" type="text">
+            <!-- <input type="date" name="bday" required pattern="\d{2}-\d{4}-\d{2}" placeholder="yyyy-dd-mm"> -->
+            <input id="category" placeholder="الصنف" type="text">
+            <input id="count" placeholder="الكمية" type="number">
+            <div id="prices">
+                <input onkeyup="getprices(this.id)" id="price" placeholder="السعر" type="number">
+                <input onkeyup="getprices()" id="taxes" placeholder="دفع" type="number">
+                <!-- <input onkeyup="getprices()" id="ads" placeholder="باقي" type="number"> -->
+                <input onkeyup="getprices()" id="discount" placeholder="الحساب" type="number">
+                <small id="rest"></small>
+                <small id="total"></small>
+            </div>
+
+
+            <button id="create">انشاء</button>
+            <div id="output">
+                <input onkeyup="searchData(this.value)" id="search" placeholder="بحث" type="text">
+                <div id="btnsearch">
+                    <button onclick="getSearchMood(this.id)" id="SearchByTitle">بحث عن طريق الاسم</button>
+                    <button onclick="getSearchMood(this.id)" id="SearchByCategory">بحث عن طريق الصنف</button></div>
+            </div>
+        </div>
+        <div id="deleteAll"></div>
+        <table>
+            <tr>
+                <th>
+                    id
+                </th>
+                <th>
+                    اسم التاجر
+                </th>
+                <th>
+                    السعر
+                </th>
+                <th>
+                    دفع
+                </th>
+                <th>
+                    باقي
+                </th>
+                <th>
+                    الحساب
+                </th>
+                <th>
+                    المجموع
+                </th>
+                <th>
+                    الصنف
+                </th>
+                <th>
+                    الكمية
+                </th>
+                <th>
+                    تحديث
+                </th>
+                <th>
+                    مسح
+                </th>
+            </tr>
+            <tbody id="tbody">
+            </tbody>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
